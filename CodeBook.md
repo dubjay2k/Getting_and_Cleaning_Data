@@ -42,7 +42,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 4) `x_train`, `y_train` and `subject_train` had `cbind` applied, resulting in `mrg_train`.
 5) `x_test`, `y_test` and `subject_test` had `cbind` applied, resulting in `mrg_test`.
 6) `mrg_train` and `mrg_test` had `rbind` applied, resulting in `allData`. This was a complete data set with all data sets labeled and merged.
-7) Create a `setForMeanAndStd` subset by filtering on column names that contain `activityId`, `subjectId`, `mean()` or `std()`.
+7) Create a `setForMeanAndStd` subset from `allData` by filtering on column names that contain `activityId`, `subjectId`, `mean()` or `std()`.
 8) Merged `setForMeanAndStd` and `activityLabels` to create `setWithActivityNames`. This is a subset with activity names included.
 9) Order and output `tidy_data_set.txt`.
 
